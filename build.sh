@@ -42,13 +42,12 @@ chmod +x vlc.wrapper
 mv -f vlc.wrapper Vlc*/usr/bin/
 mv -f vlc.appdata.xml Vlc*/usr/share/metainfo/
 
-wget https://github.com/cmatomic/RecipesAppimage/raw/master/VLCplayerSnap/appimagetool
+#wget https://github.com/cmatomic/RecipesAppimage/raw/master/VLCplayerSnap/appimagetool
 
-chmod +x appimagetool
+#chmod +x appimagetool
 
 ./appimagetool --no-appstream VlcPlayerSnap-x86_64.AppDir
 mv VLC-*.AppImage VlcPlayerSnap-x86_64.AppImage
 mkdir ../out
 mv VlcPlayerSnap-x86_64.AppImage ../out
-
 zsyncmake *.AppImage
