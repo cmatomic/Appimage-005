@@ -4,12 +4,6 @@
 # after running this script then you can go to the ~out\ folder and click on the generated Vlc appimage
 # 10-08-2019 "DDMMYY"
 
-read -p "Do not run this script with sudo or as root, if this is the normal user answer Y to continue:" -n 1 -r
-if [[ ! $REPLY =~ ^[Yy]$ ]]
-then
-    exit 1
-fi
-
 mkdir VLCsnapBuild
 chmod 755 VLCsnapBuild
 cd VLCsnapBuild
