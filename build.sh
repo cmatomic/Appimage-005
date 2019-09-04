@@ -3,7 +3,6 @@
 # Script tested in Ubunu xenial 16.04
 # after running this script then you can go to the ~out\ folder and click on the generated Vlc appimage
 # 10-08-2019 "DDMMYY"
-
 mkdir VLCsnapBuild
 chmod 755 VLCsnapBuild
 cd VLCsnapBuild
@@ -11,6 +10,9 @@ mkdir out
 
 wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/squashfs-tools/squashfs-toolsUnion.yml
 wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/SnapAppimage/SnapUnion.yml
+wget https://raw.githubusercontent.com/AppImage/pkg2appimage/master/pkg2appimage
+
+chmod +x pkg2appimage
 
 $here ./pkg2appimage squashfs-toolsUnion.yml
 $here ./pkg2appimage SnapUnion.yml
@@ -38,6 +40,9 @@ wget https://github.com/cmatomic/RecipesAppimage/raw/master/VLCplayerSnap/appima
 chmod +x appimagetool
 
 ./appimagetool --no-appstream VlcPlayerSnap-x86_64.AppDir
-#mv VLC-*.AppImage VlcPlayerSnap-x86_64.AppImage
+mv VLC-*.AppImage VlcPlayerSnap-x86_64.AppImage
+mkdir ../out
+mv VlcPlayerSnap-x86_64.AppImage ../out
+ls -lh ../out/*.AppImage
 cd out/
 zsyncmake *.AppImage
