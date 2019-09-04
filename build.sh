@@ -11,9 +11,6 @@ mkdir out
 
 wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/squashfs-tools/squashfs-toolsUnion.yml
 wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/SnapAppimage/SnapUnion.yml
-wget https://raw.githubusercontent.com/AppImage/pkg2appimage/master/pkg2appimage
-
-chmod +x pkg2appimage
 
 $here ./pkg2appimage squashfs-toolsUnion.yml
 $here ./pkg2appimage SnapUnion.yml
@@ -41,7 +38,6 @@ wget https://github.com/cmatomic/RecipesAppimage/raw/master/VLCplayerSnap/appima
 chmod +x appimagetool
 
 ./appimagetool --no-appstream VlcPlayerSnap-x86_64.AppDir
-mv VLC-*.AppImage VlcPlayerSnap-x86_64.AppImage
-mkdir ../out
-mv VlcPlayerSnap-x86_64.AppImage ../out
+#mv VLC-*.AppImage VlcPlayerSnap-x86_64.AppImage
+cd out/
 zsyncmake *.AppImage
