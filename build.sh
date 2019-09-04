@@ -44,5 +44,5 @@ mv VLC-*.AppImage VlcPlayerSnap-x86_64.AppImage
 mkdir ../out
 mv VlcPlayerSnap-x86_64.AppImage ../out
 ls -lh ../out/*.AppImage
-cd out/
+cd ../out/
 zsyncmake *.AppImage
