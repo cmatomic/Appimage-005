@@ -1,8 +1,9 @@
+
 #!/bin/bash
 # VLC version import from snap ubuntu 
-# Script tested in Ubunu xenial 16.04
+# Script tested in Ubunu xenial 16.04 and Debian 10 (buster)
 # after running this script then you can go to the ~out\ folder and click on the generated Vlc appimage
-# 10-08-2019 "DDMMYY"
+# 27-09-2019 "DDMMYYY"
 mkdir VLCsnapBuild
 chmod 755 VLCsnapBuild
 cd VLCsnapBuild
@@ -19,6 +20,7 @@ $here ./pkg2appimage SnapUnion.yml
 $here ./out/Snap-*.AppImage download vlc
 $here ./out/squashfs-tools*.AppImage vlc_*.snap
 mv squashfs-root/ VlcPlayerSnap-x86_64.AppDir/
+mv Vlc*/usr/lib/x86_64-linux-gnu/libgtk-3.so.0  VlcPlayerSnap-x86_64.AppDir/usr/lib/x86_64-linux-gnu/libgtk-3.so.0.back
 
 wget  https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcSnapAppimage/AppRun -P Vlc*
 
