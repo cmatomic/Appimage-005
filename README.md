@@ -28,5 +28,4 @@ mkdir VLCscript;cd VLCscript;wget https://raw.githubusercontent.com/cmatomic/Rec
 ```
 
 ## VLC version build from source
-if you are looking for a stable version see the following link
-Download the AppImage from [here](https://github.com/cmatomic/VLCplayer-AppImage/releases).
+If you are looking for a stable version Download the AppImage from [here](https://github.com/cmatomic/VLCplayer-AppImage/releases).
