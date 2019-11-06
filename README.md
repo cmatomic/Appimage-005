@@ -27,5 +27,5 @@ mkdir VLCscript;cd VLCscript;wget https://raw.githubusercontent.com/cmatomic/Rec
  mkdir VLCscript;cd VLCscript;wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcPlayervlcEdgeSnap.sh;chmod +x Vlc*.sh;./Vlc*.sh  
 ```
 
-## VLC version build from source
+#### VLC version build from source
 If you are looking for a stable version Download the AppImage from [here](https://github.com/cmatomic/VLCplayer-AppImage/releases).
