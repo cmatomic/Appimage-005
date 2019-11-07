@@ -27,5 +27,21 @@ mkdir VLCscript;cd VLCscript;wget https://raw.githubusercontent.com/cmatomic/Rec
  mkdir VLCscript;cd VLCscript;wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcPlayervlcEdgeSnap.sh;chmod +x Vlc*.sh;./Vlc*.sh  
 ```
 
+* ### sources
+
+* files for import snap vlc 
+
+ https://github.com/cmatomic/RecipesAppimage/tree/master/VLCplayerSnap
+  
+* files for import snapy 
+
+ https://github.com/cmatomic/RecipesAppimage/tree/master/SnapAppimage
+ 
+ * files for import tsquashfs-tools
+ 
+ https://github.com/cmatomic/RecipesAppimage/tree/master/squashfs-tools
+ 
+ 
+
 #### VLC version build from source
 If you are looking for a stable version Download the AppImage from [here](https://github.com/cmatomic/VLCplayer-AppImage/releases).
